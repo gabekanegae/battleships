@@ -1,0 +1,23 @@
+#titleLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 50;
+}
+
+#subtitleLabel {
+     -fx-font-family: "Airborne II Pilot";
+     -fx-font-size: 30;
+}
+
+#rotateButton, #randomButton, #resetButton {
+    -fx-font-family: "Noto Sans Blk";
+    -fx-font-size: 40;
+}
+
+#rotateLabel, #randomLabel, #resetLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 16;
+}
+#battleButton {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 25;
+}

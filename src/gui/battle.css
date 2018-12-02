@@ -1,0 +1,14 @@
+#titleLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 50;
+}
+
+#playerBombsLabel, #enemyBombsLabel, #playerPointsLabel, #enemyPointsLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 19;
+}
+
+#playerJDAMAmount, #playerMissileAmount, #playerPointsAmount, #enemyJDAMAmount, #enemyMissileAmount, #enemyPointsAmount {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 18;
+}

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" spacing="5.0" style="-fx-background-image: url('/images/backgrounds/battle.png');" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="battleships.controllers.battleController">
+   <children>
+      <Label fx:id="titleLabel" alignment="CENTER" text="Battle">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin></Label>
+      <HBox alignment="CENTER" prefHeight="430.0" prefWidth="960.0">
+         <children>
+            <VBox alignment="CENTER_RIGHT" prefHeight="540.0" prefWidth="430.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER" maxWidth="375.0" prefHeight="25.0">
+                     <children>
+                        <Label fx:id="playerBombsLabel" alignment="CENTER" prefWidth="70.0" text="Bombs:">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Pane fx:id="playerJDAMPane" prefHeight="25.0" prefWidth="25.0">
+                           <children>
+                              <ImageView fx:id="playerJDAMImage" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                        <Label fx:id="playerJDAMAmount" alignment="CENTER" prefWidth="30.0" text="50" />
+                        <Pane fx:id="playerMissilePane" prefHeight="25.0" prefWidth="25.0">
+                           <children>
+                              <ImageView fx:id="playerMissileImage" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <Label fx:id="playerMissileAmount" alignment="CENTER" prefWidth="30.0" text="5" />
+                        <Label fx:id="playerPointsLabel" alignment="CENTER_RIGHT" prefWidth="70.0" text="Points:">
+                           <HBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="playerPointsAmount" alignment="CENTER" prefWidth="40.0" text="1000" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane fx:id="playerGridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="375.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <VBox.margin>
+                        <Insets right="2.0" />
+                     </VBox.margin>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefWidth="110.0">
+               <children>
+                  <VBox prefHeight="202.0" prefWidth="110.0" />
+                  <HBox prefHeight="75.0" prefWidth="110.0">
+                     <children>
+                        <ImageView fx:id="playerTurnImage" fitHeight="80.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <VBox prefHeight="80.0" prefWidth="20.0" />
+                        <ImageView fx:id="enemyTurnImage" fitHeight="80.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children></VBox>
+            <VBox prefHeight="540.0" prefWidth="430.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER" maxWidth="375.0" prefHeight="25.0">
+                     <children>
+                        <Label fx:id="enemyBombsLabel" alignment="CENTER" prefWidth="70.0" text="Bombs:">
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Pane fx:id="enemyJDAMPane" prefHeight="25.0" prefWidth="25.0">
+                           <children>
+                              <ImageView fx:id="enemyJDAMImage" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Pane>
+                        <Label fx:id="enemyJDAMAmount" alignment="CENTER" prefWidth="30.0" text="50" />
+                        <Pane fx:id="enemyMissilePane" prefHeight="25.0" prefWidth="25.0">
+                           <children>
+                              <ImageView fx:id="enemyMissileImage" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </Pane>
+                        <Label fx:id="enemyMissileAmount" alignment="CENTER" prefWidth="30.0" text="5" />
+                        <Label fx:id="enemyPointsLabel" alignment="CENTER_RIGHT" prefWidth="70.0" text="Points:">
+                           <HBox.margin>
+                              <Insets left="15.0" right="15.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="enemyPointsAmount" alignment="CENTER" prefWidth="40.0" text="1000" />
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <GridPane fx:id="enemyGridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="375.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </GridPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

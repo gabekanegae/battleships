@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" spacing="5.0" style="-fx-background-image: url('/images/backgrounds/setup.png');" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/" fx:controller="battleships.controllers.setupController">
+    <children>
+        <Label fx:id="titleLabel" alignment="CENTER" text="Setup">
+            <VBox.margin>
+                <Insets bottom="5.0" />
+            </VBox.margin></Label>
+        <HBox alignment="CENTER_LEFT" prefHeight="430.0" prefWidth="960.0" spacing="20.0">
+            <children>
+                <VBox alignment="BOTTOM_RIGHT" prefHeight="540.0" prefWidth="430.0">
+                    <children>
+                        <GridPane fx:id="playerGridPane" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="375.0" prefWidth="375.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" prefWidth="25.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                                <RowConstraints prefHeight="25.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="515.0">
+                    <children>
+                        <Label fx:id="subtitleLabel" text="Place Your Ships" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets right="3.0" top="10.0" />
+                            </VBox.margin>
+                        </Label>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="515.0">
+                            <children>
+                                <Pane fx:id="carrier0Pane" layoutX="106.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0">
+                                    <children>
+                                        <ImageView fx:id="carrier0" fitHeight="25.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="carrier1Pane" layoutX="106.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0">
+                                    <children>
+                                        <ImageView fx:id="carrier1" fitHeight="25.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="tanker0Pane" layoutX="118.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0">
+                                    <children>
+                                        <ImageView fx:id="tanker0" fitHeight="25.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="tanker1Pane" layoutX="118.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="100.0">
+                                    <children>
+                                        <ImageView fx:id="tanker1" fitHeight="25.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="torpedo0Pane" layoutX="241.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="75.0">
+                                    <children>
+                                        <ImageView fx:id="torpedo0" fitHeight="25.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="torpedo1Pane" layoutX="241.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="75.0">
+                                    <children>
+                                        <ImageView fx:id="torpedo1" fitHeight="25.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="torpedo2Pane" layoutX="241.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="75.0">
+                                    <children>
+                                        <ImageView fx:id="torpedo2" fitHeight="25.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="torpedo3Pane" layoutX="241.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="75.0">
+                                    <children>
+                                        <ImageView fx:id="torpedo3" fitHeight="25.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="submarine0Pane" layoutX="326.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0">
+                                    <children>
+                                        <ImageView fx:id="submarine0" fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="submarine1Pane" layoutX="326.0" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0">
+                                    <children>
+                                        <ImageView fx:id="submarine1" fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="submarine2Pane" layoutX="326.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0">
+                                    <children>
+                                        <ImageView fx:id="submarine2" fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="submarine3Pane" layoutX="326.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="50.0">
+                                    <children>
+                                        <ImageView fx:id="submarine3" fitHeight="25.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                                <Pane fx:id="buoy0Pane" layoutX="386.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="25.0">
+                                    <children>
+                                        <ImageView fx:id="buoy0" fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" />
+                                    </children>
+                                </Pane>
+                            </children>
+                        </AnchorPane>
+                        <HBox alignment="CENTER" prefHeight="140.0" prefWidth="525.0" spacing="160.0">
+                            <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="170.0" prefWidth="515.0" spacing="30.0">
+                           <children>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="425.0" spacing="15.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                       <children>
+                                                  <Button fx:id="rotateButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="🡐" textAlignment="CENTER">
+                                             <padding>
+                                                <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-15.0" />
+                                             </padding>
+                                          </Button>
+                                          <Label fx:id="rotateLabel" text="Rotate" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                       <children>
+                                          <Button fx:id="randomButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="?" textAlignment="CENTER">
+                                             <padding>
+                                                <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-15.0" />
+                                             </padding>
+                                          </Button>
+                                          <Label fx:id="randomLabel" text="Randomize" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                       <children>
+                                          <Button fx:id="resetButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="X" textAlignment="CENTER">
+                                             <padding>
+                                                <Insets bottom="-15.0" left="-15.0" right="-15.0" top="-15.0" />
+                                             </padding>
+                                          </Button>
+                                          <Label fx:id="resetLabel" text="Reset" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                                      <Button fx:id="battleButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#battle" prefHeight="50.0" prefWidth="150.0" text="Battle!" textAlignment="CENTER" />
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </VBox>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,9 @@
+#titleLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 80;
+}
+
+#playButton, #instructionsButton, #creditsButton, #quitButton {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 22;
+}

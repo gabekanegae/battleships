@@ -1,0 +1,19 @@
+#titleLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 50;
+}
+
+#finalScoreLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 30;
+}
+
+#finalScoreAmountLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 25;
+}
+
+#menuButton {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 20;
+}

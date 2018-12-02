@@ -1,0 +1,19 @@
+#titleLabel {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 50;
+}
+
+#title1, #title2, #title3, #title4 {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 24;
+}
+
+#desc1, #desc2, #desc3, #desc4 {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 18;
+}
+
+#backButton {
+    -fx-font-family: "Airborne II Pilot";
+    -fx-font-size: 20;
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" spacing="30.0" style="-fx-background-image: url('/images/backgrounds/credits.png');" xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="battleships.controllers.creditsController">
+   <children>
+      <Label fx:id="titleLabel" text="Credits">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Label>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="320.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="title1" text="Game Design" />
+                  <Label fx:id="desc1" alignment="CENTER" contentDisplay="CENTER" text="Fabiana Dalacqua" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="title2" text="UI Design" />
+                  <Label fx:id="desc2" alignment="CENTER" contentDisplay="CENTER" text="Gabriel Kanegae" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="140.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="title3" text="Programming" />
+                  <Label fx:id="desc3" alignment="CENTER" contentDisplay="CENTER" text="Amira Gayatri&#10;Bruno del Monde&#10;Fabiana Dalacqua&#10;Gabriel Kanegae&#10;Renata Vinhaga" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="title4" text="Art" />
+                  <Label fx:id="desc4" alignment="CENTER" contentDisplay="CENTER" text="Fernanda Clemente" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <Button fx:id="backButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="150.0" text="Back" />
+   </children>
+</VBox>
