@@ -36,7 +36,7 @@ public class setupController implements Initializable {
     private static final Image submarineShipImage = new Image("/images/icons/submarine.png");
     private static final Image buoyShipImage = new Image("/images/icons/buoy.png");
 
-    private int shipSelected = 0; //Current selected ship part
+    private int shipSelected = -1; //Current selected ship part
     private int shipsPlaced = 0; //Placed ships counter
     private boolean rotated = false; //State of the Rotate button
 
@@ -129,7 +129,9 @@ public class setupController implements Initializable {
                     int row = GridPane.getRowIndex((Node) e.getSource());
 
                     int ID = 0; //Get ship type
-                    if (shipSelected < 2) { //0, 1
+                    if (shipSelected == -1) { //None
+                        ID = 0;
+                    } else if (shipSelected < 2) { //0, 1
                         ID = 5;
                     } else if (shipSelected < 4) { //2, 3
                         ID = 4;
@@ -176,7 +178,7 @@ public class setupController implements Initializable {
 
     //Reset ship selection
     private void clearAll() {
-        shipSelected = 0;
+        shipSelected = -1;
         carrier0Pane.setStyle("");
         carrier1Pane.setStyle("");
         tanker0Pane.setStyle("");
