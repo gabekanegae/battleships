@@ -22,4 +22,4 @@ Made with ❤️ by:
 * [Gabriel Kanegae](https://github.com/KanegaeGabriel)
 * [Renata Vinhaga](https://github.com/renatavinhaga)
 ### Art
-* Fernanda Clemente
+* [Fernanda Clemente](https://www.artstation.com/fernanda_clemente/profile)
