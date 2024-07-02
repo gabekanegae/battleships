@@ -1,6 +1,6 @@
 # Battleships
 Battheships game developed in Java, using JavaFX.
-Download jar at the [releases page](https://github.com/KanegaeGabriel/battleships/releases/latest).
+Download jar at the [releases page](https://github.com/gabekanegae/battleships/releases/latest).
 
 Screenshots
 -------
@@ -15,11 +15,11 @@ Made with ❤️ by:
 ### Game Design
 * [Fabiana Dalacqua](https://github.com/fabidalacqua)
 ### UI Design
-* [Gabriel Kanegae](https://github.com/KanegaeGabriel)
+* [Gabriel Kanegae](https://github.com/gabekanegae)
 ### Programming
 * [Amira Gayatri](https://github.com/renatavinhaga)
 * [Bruno Del Monde](https://github.com/brudel)
-* [Gabriel Kanegae](https://github.com/KanegaeGabriel)
+* [Gabriel Kanegae](https://github.com/gabekanegae)
 * [Renata Vinhaga](https://github.com/renatavinhaga)
 ### Art
-* [Fernanda Clemente](https://www.artstation.com/fernanda_clemente/profile)
+* [Fernanda Clemente](https://fernandasc.artstation.com)
